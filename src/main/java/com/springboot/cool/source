@@ -1,0 +1,21 @@
+Entity class requirements
+
+ >must be annotated with @entity
+ >must have public/proctected no argument constructor
+ >class can have other constructer also
+ >if dont declare any constructor
+ 	i)java will provide no argumentconstructot for free
+ however if you declare arugmented constructor java will not provided no argument constructor
+ that time explicity declare the no argument constructor
+ 
+ 
+ Java annoatations
+ 
+ step1: Map class to database table
+ 		@Entity
+ 		@Table(name = "student")
+ step2: Map fields to database columns
+ 		@id
+ 		@generatedValue(strategy=GenerationType.IDENTITY)
+ 		@column(name="id")//it is optional if you dont provide name it will take as field name
+ 		@column(name="first_name")
